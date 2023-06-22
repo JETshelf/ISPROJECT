@@ -1,0 +1,31 @@
+ERROR - 2023-06-19 06:31:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 PRIMARY KEY(`role_id`)
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_genera...' at line 6 in C:\Users\User\Downloads\CI\CI\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\User\Downloads\CI\CI\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\Users\User\Downloads\CI\CI\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\Users\User\Downloads\CI\CI\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\Users\User\Downloads\CI\CI\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\Users\User\Downloads\CI\CI\app\Database\Migrations\2023-06-19-061204_Role.php(35): CodeIgniter\Database\Forge->createTable('tbl_roles')
+#5 C:\Users\User\Downloads\CI\CI\system\Database\MigrationRunner.php(877): App\Database\Migrations\Role->up()
+#6 C:\Users\User\Downloads\CI\CI\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\User\Downloads\CI\CI\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\User\Downloads\CI\CI\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\User\Downloads\CI\CI\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\User\Downloads\CI\CI\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-06-19 06:43:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 PRIMARY KEY(`role_id`)
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_genera...' at line 6 in C:\Users\User\Downloads\CI\CI\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\User\Downloads\CI\CI\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\Users\User\Downloads\CI\CI\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\Users\User\Downloads\CI\CI\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\Users\User\Downloads\CI\CI\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\Users\User\Downloads\CI\CI\app\Database\Migrations\2023-06-19-061204_Role.php(35): CodeIgniter\Database\Forge->createTable('tbl_roles')
+#5 C:\Users\User\Downloads\CI\CI\system\Database\MigrationRunner.php(877): App\Database\Migrations\Role->up()
+#6 C:\Users\User\Downloads\CI\CI\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\User\Downloads\CI\CI\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\User\Downloads\CI\CI\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\User\Downloads\CI\CI\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\User\Downloads\CI\CI\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2023-06-19 14:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
